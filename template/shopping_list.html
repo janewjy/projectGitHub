@@ -1,0 +1,33 @@
+<form>
+	<h2>Add a Food</h2>
+	<input type='text' name="food">
+	{% if items %}
+		{% for item in items %}
+			df
+			<input type="hidden" namd="food" value="{{item}}">
+		{% endfor %}
+	{% endif %}
+
+	<button>Add</button>
+	dfs
+	{% if items %}
+		<br>
+		<br>
+
+		<h2>shopping list</h2>
+		<ul>
+			{% for item in items%}
+				<li> {{item}} </li>
+			{% endfor %}
+
+		</ul>
+	{% endif %}
+	<!-- <h2>Hello, {{n}} </h2> -->
+
+	<!-- {% if n == 1 %}
+		n equals 1
+	{% else %}
+		n dose not equal 1
+	{% endif %} -->
+
+</form>
