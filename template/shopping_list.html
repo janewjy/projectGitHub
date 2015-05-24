@@ -15,7 +15,7 @@
 		<h2>shopping list</h2>
 		<ul>
 			{% for item in items%}
-				<li> {{item}} </li>
+				<li> {{item | safe}} </li>
 			{% endfor %}
 
 		</ul>
